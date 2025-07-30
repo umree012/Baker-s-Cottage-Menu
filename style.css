@@ -79,33 +79,44 @@ a > button:hover {
 .menu-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 16px;
   justify-content: center;
-  margin: 30px 0;
+  margin: 20px 0;
+  padding: 0 8px;
 }
 
 .menu-card {
-  background: rgba(8, 66, 0, 0.85);
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(73, 173, 64, 0.12);
-  padding: 24px 32px;
-  min-width: 220px;
+  background: rgba(8, 66, 0, 0.92);
+  border-radius: 14px;
+  box-shadow: 0 2px 8px rgba(73, 173, 64, 0.18);
+  padding: 18px 10px;
+  min-width: 140px;
+  max-width: 180px;
+  width: 100%;
   text-align: center;
-  font-size: 1.2em;
+  font-size: 1em;
   transition: transform 0.2s;
+  margin: 0 auto;
 }
 
 .menu-card:hover {
-  transform: scale(1.05);
+  transform: scale(1.04);
   box-shadow: 0 4px 16px rgb(255, 219, 59);
 }
 
 .menu-img {
-  width: 120px;
-  height: 120px;
+  width: 90px;
+  height: 90px;
   object-fit: cover;
-  border-radius: 8px;
-  margin-bottom: 12px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 1.1em;
+  color: #FFD700;
+  font-weight: bold;
+  margin-top: 6px;
 }
 
 /* Footer */
@@ -180,5 +191,27 @@ footer {
   .social-links {
     flex-direction: column;
     gap: 0.5rem;
+  }
+}
+
+/* Make everything fit nicely on small screens */
+@media (max-width: 600px) {
+  .menu-container {
+    flex-direction: column;
+    gap: 12px;
+    padding: 0 4px;
+  }
+  .menu-card {
+    max-width: 98vw;
+    min-width: 0;
+    padding: 14px 4px;
+    font-size: 0.95em;
+  }
+  .menu-img {
+    width: 70px;
+    height: 70px;
+  }
+  h1 {
+    font-size: 1.3em;
   }
 }
