@@ -1,0 +1,184 @@
+/* Body & Background */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #ffffff;
+  margin: 0;
+  padding-top: 100px; /* Header height offset */
+  background-image: url('backgroun.png'); /* Replace with your image file name */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+/* Header */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #000000;
+  color: white;
+  z-index: 1000;
+  padding: 15px 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 32px;
+  font-weight: bold;
+  color: #FFD700; /* Yellow */
+}
+
+header .tagline {
+  margin: 5px 0 0 0;
+  font-size: 16px;
+  font-style: italic;
+  color: #e0e0e0;
+}
+
+/* Menu Buttons */
+.menu-buttons {
+  padding: 20px 0;
+}
+
+.menu-buttons button {
+  padding: 15px 30px;
+  margin: 10px;
+  font-size: 18px;
+  background-color: #014114;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.menu-buttons button:hover {
+  background-color: #d8e614;
+  color: black;
+}
+
+/* Back Button Style */
+a > button {
+  background-color: #ff9900;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+a > button:hover {
+  background-color: #cc7a00;
+}
+
+/* Menu Container and Card */
+.menu-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+.menu-card {
+  background: rgba(8, 66, 0, 0.85);
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(73, 173, 64, 0.12);
+  padding: 24px 32px;
+  min-width: 220px;
+  text-align: center;
+  font-size: 1.2em;
+  transition: transform 0.2s;
+}
+
+.menu-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 16px rgb(255, 219, 59);
+}
+
+.menu-img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+/* Footer */
+footer {
+  background-color: #000000;
+  color: white;
+  padding: 2rem 1rem;
+  font-family: 'Jameel Noori Nastaleeq', Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 2rem;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 200px;
+  margin-bottom: 1.5rem;
+}
+
+.footer-column h3 {
+  color: #f39c12;
+  border-bottom: 1px solid #ffffff;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.footer-column p,
+.footer-column a {
+  display: block;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-column a:hover {
+  color: #f39c12;
+}
+
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.developer-info {
+  text-align: center;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid #ffffff;
+  font-size: 0.9rem;
+  color: #ffffff;
+}
+
+.icon {
+  margin-left: 0.5rem;
+}
+
+/* Responsive for small devices */
+@media (max-width: 768px) {
+  .footer-column {
+    min-width: 150px;
+  }
+
+  .social-links {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
