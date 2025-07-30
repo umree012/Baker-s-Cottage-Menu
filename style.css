@@ -11,6 +11,21 @@ body {
   background-position: center center;
 }
 
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+}
+
 /* Header */
 header {
   position: fixed;
@@ -125,6 +140,13 @@ footer {
   color: white;
   padding: 2rem 1rem;
   font-family: 'Jameel Noori Nastaleeq', Arial, sans-serif;
+}
+
+footer {
+  background: #000;
+  color: white;
+  padding: 10px;
+  text-align: center;
 }
 
 .footer-container {
